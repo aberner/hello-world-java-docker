@@ -2,6 +2,20 @@
 
 a very simple rest-api-hello-world java application with Spring Boot and Maven, containerized with dockerfile, ready to build and deployed with a very simple way.
 
+## prerequisite
+
+- install JDK
+  - add JAVA_HOME 
+  - add to path
+- install maven and add to path
+- install docker desktop
+
+### Note on java version
+
+Java version is referanced both in the pom.xml and Dockerfile
+These needs to match and correspond to your code.
+
+
 ## How to Build
 ```
 docker build -t hello-world-java-docker .
