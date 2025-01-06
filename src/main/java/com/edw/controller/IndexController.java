@@ -6,10 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.Random;
 
 @RestController
 public class IndexController {
     private Logger logger = LoggerFactory.getLogger(IndexController.class);
+    private Random random = new Random();
 
     @GetMapping("/")
     public HashMap index() {
@@ -19,6 +21,7 @@ public class IndexController {
             put("success", true);
             put("hello", "world");
             put("new-message", "adding a new msg");
+            put("id", random.nextInt(10000));
         }};
     }
 }
