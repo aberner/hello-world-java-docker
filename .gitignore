@@ -267,3 +267,4 @@ $RECYCLE.BIN/
 /.idea/misc.xml
 /.idea/vcs.xml
 /.idea/**
+.vscode/settings.json
